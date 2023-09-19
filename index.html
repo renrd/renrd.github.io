@@ -2,7 +2,7 @@
  * @Author: renrd 1179327883@qq.com
  * @Date: 2023-09-19 22:06:59
  * @LastEditors: renrd 1179327883@qq.com
- * @LastEditTime: 2023-09-20 00:34:16
+ * @LastEditTime: 2023-09-20 02:32:03
  * @FilePath: \renrd.github.io\index.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -18,7 +18,7 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
-<meta name="referrer" content="no-referrer" />
+<meta name="referrer" content="no-referrer">
 <title>备忘录</title>
 <style>
    .my_div
@@ -28,7 +28,7 @@
    box-shadow:10px 10px 10px  #888888;
    padding: 25px;
    color:aliceblue;
-   margin-right: 100px;
+   margin-right: 10px;
    background-color:cadetblue;
    font-size: 30px;
    margin-bottom: 25px;
@@ -39,10 +39,11 @@
    .right_div
    {
       display:flex;
-      position:absolute;
+   position:relative;
 right: 5px;
 writing-mode: vertical-lr;
 flex-direction:column;
+width: 700px;
    }
    .my_div2
    {
@@ -51,19 +52,44 @@ flex-direction:column;
    box-shadow:10px 10px 10px  #888888;
    padding: 25px;
    color:aliceblue;
-   margin-right: 100px;
    background-color:cadetblue;
    font-size: 30px;
-   margin-bottom: 25px;
-   width: 20%;
-   overflow: auto;
+   width: 50px;
+   overflow:hidden;
+   margin-left: 90px;
+   height: 100%;
+   background-color:antiquewhite;
+   text-align:center;
+   color:chocolate;
    }
    .flex_div
    {
-      display: flex;
-      flex-direction: column;
-      align-items: fl;
+      display:flex;
+      margin-right:0px;
+writing-mode: vertical-lr;
+flex-direction:row;
+padding: auto;
+float: right;
+text-align: right;
+
    }
+   .my_div3
+   {
+      border:2px solid;
+      border-radius:100px;
+      box-shadow:10px 10px 10px  #888888;
+      padding: 25px;
+      color:aliceblue;
+      margin-right: 10px;
+      background-color:cadetblue;
+      margin-top: 200px;
+      margin-left: 100px;
+      overflow: auto;
+      width: 500px;
+      height: 400px;
+      text-align: center;
+      
+      }
 </style>
 </head>
 <body background="https://imglf4.lf127.net/img/0fe547d783eaf334/T3RGOGZ2c3I1dTd6cWZ5V3hVSHc3Q2RyOFR4K0dvT29IaENWbUhyTHFLbz0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0"
@@ -71,17 +97,30 @@ style="background-size: cover;
 background-repeat: repeat;
 background-color:black
 ">
+
+
+<div class="flex_div">
 <div class="right_div">
-<h1 class="my_div2" id="备忘录" style="background-color:antiquewhite;color:chocolate;">
+<h1 class="my_div2" id="备忘录" >
    备忘录
    </h1>
    <a href="https://github.com/renrd/renrd.github.io">
-   <h1 class="my_div2" style="background-color:antiquewhite;color:chocolate;" >
-      github网址
+   <h1 class="my_div2" >
+      github仓库
       </h1>
       </a>
+      <a href="https://space.bilibili.com/363927324">
+      <h1 class="my_div2">
+         b站主页
+      </h1>
+   </a>
 </div>
- 
+<iframe class="my_div3" src="https://player.bilibili.com/player.html?bvid=BV1N14y1k7UF&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+
+
+
 <table>
    
 <div class="my_div">
@@ -93,7 +132,6 @@ background-color:black
 稿子（鱼丸）<br>
 </div>
 </table>
-
 </body>
 
 </html>
